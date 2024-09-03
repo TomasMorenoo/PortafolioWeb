@@ -1,23 +1,21 @@
 ---
 import HeaderButton from "./HeaderButton.astro"
-
+import AnimatedText from "./Animated-text.astro"
 console.log ('javascript') 
 ---
 
-<header class="py-8 px-4 mx-auto max-w-xl lg:py-16 lg:px-6" > 
-    <div class="mx-auto text-center mb-8 lg:mb-16">
-        <h2 class="mb-4 text-5xl tracking-tight font-extrabold text-white">
-            Mi Portafolio Web
-        </h2>
-        <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">
-            aqui encontraras mis proyectos y trabajos realizados :)
-        </p>
-    </div>
-
-    <nav class=" items-center w-full  text-center md:flex-row">
+<header class="py-2 px-4 mx-auto  max-w-xl" > 
+    <nav class=" items-center w-full  text-center md:flex-row mb-2" >
         <HeaderButton class="text-white" href="/">Inicio</a>
         <HeaderButton class="text-white" href="/">Mis proyectos</a>
         <HeaderButton class="text-white" href="/"> About Me</a>
         
     </nav>
+    <div class="mx-auto text-center mb-8 lg:mb-16">
+        <h2 class="mb-4 text-5xl tracking-tight font-extrabold text-white">
+            Tomas Moreno Bauer
+        </h2>
+        <AnimatedText>
+    </div>
+
 </header>

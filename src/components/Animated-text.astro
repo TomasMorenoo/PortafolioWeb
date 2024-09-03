@@ -1,0 +1,43 @@
+<p id="animated-text" class=" font-light text-gray-500 sm:text-xl dark:text-gray-400 transition: opacity 0.5s ease-in-out;">Welcome to my portfolio</p>
+
+<script>
+  
+  const textos = [
+  "Welcome to my portfolio",
+  "Bienvenidos a mi portafolio",
+];
+
+  // El script corre después de que el DOM esté listo
+  document.addEventListener('DOMContentLoaded', () => {
+    let currentIndex = 0;
+    const textElement = document.getElementById("animated-text");
+
+    if (textElement) { // Verificar que textElement no sea null
+      function changeText() {
+        if (textElement) {
+          textElement.style.opacity = '0';
+        }
+
+        setTimeout(() => {
+          currentIndex = (currentIndex + 1) % textos.length;
+          if (textElement) {
+            textElement.textContent = textos[currentIndex];
+          }
+          if (textElement) {
+            textElement.style.opacity = '1';
+          }
+        }, 500);
+      }
+
+      setInterval(changeText, 3000);
+    } else {
+      console.error("Element with id 'animated-text' not found.");
+    }
+  });
+</script>
+
+<style>
+  #animated-text {
+    transition: opacity 0.5s ease-in-out;
+  }
+</style>
