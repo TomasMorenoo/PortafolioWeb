@@ -1,4 +1,6 @@
 ---
+import HeaderButton from "./HeaderButton.astro"
+
 console.log ('javascript') 
 ---
 
@@ -12,8 +14,10 @@ console.log ('javascript')
         </p>
     </div>
 
-    <nav class="flex flex-col  items-center justify-between w-full  text-center md:flex-row">
-        <a class="text-white" href="/">Mis proyectos</a>
-        <a class="text-white" href="/*">Abaout Me</a>
+    <nav class=" items-center w-full  text-center md:flex-row">
+        <HeaderButton class="text-white" href="/">Inicio</a>
+        <HeaderButton class="text-white" href="/">Mis proyectos</a>
+        <HeaderButton class="text-white" href="/"> About Me</a>
+        
     </nav>
 </header>
