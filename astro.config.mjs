@@ -2,6 +2,6 @@ import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 
 export default defineConfig({
-  base: '/PortafolioWeb/',
+  base: './src/pages/index.astro',
   integrations: [tailwind()],
 });
