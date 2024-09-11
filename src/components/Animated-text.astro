@@ -7,12 +7,12 @@
   "Bienvenidos a mi portafolio",
 ];
 
-  // El script corre después de que el DOM esté listo
+
   document.addEventListener('DOMContentLoaded', () => {
     let currentIndex = 0;
     const textElement = document.getElementById("animated-text");
 
-    if (textElement) { // Verificar que textElement no sea null
+    if (textElement) { 
       function changeText() {
         if (textElement) {
           textElement.style.opacity = '0';
