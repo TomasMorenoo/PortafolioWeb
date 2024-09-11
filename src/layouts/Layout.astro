@@ -30,5 +30,15 @@ const { title } = Astro.props;
 		font-family: system-ui, sans-serif;
 		
 	}
+@media (prefers-color-scheme: dark) {
+    #briefcase-icon {
+        stroke: #ffffff;
+    }
+}
 
+@media (prefers-color-scheme: light) {
+    #briefcase-icon {
+        stroke: #000000;
+    }
+}
 </style>

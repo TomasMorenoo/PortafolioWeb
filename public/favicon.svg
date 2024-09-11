@@ -10,16 +10,3 @@
     <path d="M3 13a20 20 0 0 0 18 0" />
 </svg>
 
-<style>
-@media (prefers-color-scheme: dark) {
-    #briefcase-icon {
-        stroke: #ffffff;
-    }
-}
-
-@media (prefers-color-scheme: light) {
-    #briefcase-icon {
-        stroke: #000000;
-    }
-}
-</style>
